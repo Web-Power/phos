@@ -1,0 +1,24 @@
+# create env with:
+# conda env create -p ./env --file ./conda-env.yaml
+# delete with:
+# conda env remove -p ./env
+# On your terminal: conda activate -p ./env
+name: phos
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - pyhive  # note: add thrift_sasl if coming from pip
+  - conda
+  - texttable # pretty text output
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - prompt_toolkit # pyline
+  # Those ones should be dev only
+  - conda-pack # packager
+  - coverage # test
+  - mock #
+  - pycodestyle # pep8
+  - mypy # check type hints

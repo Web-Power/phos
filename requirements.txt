@@ -1,0 +1,4 @@
+# Analysis of data sets
+pandas-profiling
+# Embedded python interpreter
+ptpython
